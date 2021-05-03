@@ -11,11 +11,11 @@ VALUES ("A&R");
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
-("Sales Associate", 1000.00, 1),
-("Engineer/Producer", 1500.00, 2),
-("Financial Analyst", 1800.00, 3),
-("Accountant", 2300.00, 3),
-("Artist Management", 1200.00, 4);
+("Sales Associate", 100000, 1),
+("Engineer/Producer", 150000, 2),
+("Financial Analyst", 180000, 3),
+("Accountant", 230000, 3),
+("Artist Management", 120000, 4);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 

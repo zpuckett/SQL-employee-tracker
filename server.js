@@ -46,7 +46,7 @@ start();
           case "Add Employee":
             addEmployee();
             break;
-          case "View Department":
+          case "View Departments":
             viewDepartment();
             break;
           case "View Role":
@@ -106,7 +106,7 @@ start();
         const title = res.title;
         const salary = res.salary;
         const departmentID = res.departmentID;
-        const query = `INSERT INTO role (title, salary, department_id) VALUE("${title}", "${salary}", "${departmentID}")`;
+        const query = `INSERT INTO roles (title, salary, department_id) VALUE("${title}", "${salary}", "${departmentID}")`;
         connection.query(query, function(err, res) {
           if (err) throw err;
           console.table(res);
@@ -191,6 +191,7 @@ start();
           message: "Which employee needs to be updated? (please use number from id column only)",
           name: "employee"
         });
+        start();
       }
     });
   }
